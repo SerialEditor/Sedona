@@ -1,0 +1,14 @@
+.promo {
+  background-image: url("../img/background/full-images/promo-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.index-subscribe {
+  background-image: url("../img/background/full-images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-searching {
+  background-image: url("../img/background/full-images/catalog-searching-background.jpg");
+  background-repeat: no-repeat;
+}
