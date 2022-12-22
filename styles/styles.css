@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/ptsans.woff2') format('woff2'), url('../fonts/ptsans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url('../fonts/ptsansbold.woff2') format('woff2'), url('../fonts/ptsansbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  max-width: 1200px;
+  /*Размер контента задан временно; по макету - фикс 1200 пикселей*/
+  margin: 0;
+  padding: 0 40px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.page-header {
+  background-color: #ffffff;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.user-menu-button {
+  line-height: 20px;
+  background-color: #756257;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.promo {
+  background-image: url("../img/background/full-images/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.additional-advantages-list {
+  list-style-type: none;
+}
+
+.advantages-title, .additional-advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-description, .additional-advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.index-subscribe {
+  background-color: #8383D3;
+  background-image: url("../img/background/full-images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog-searching {
+  background-color: #8383D3;
+  background-image: url("../img/background/full-images/catalog-searching-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
