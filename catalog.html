@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>HTML Academy: Sedona</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
         <header class="page-header">
@@ -155,24 +155,24 @@
                         <label>
                             <span class="visually-hidden">Измените минимальную цену:</span>
                             <input
-                                class="visually-hidden"
                                 type="range"
                                 name="min_price_limit"
                                 min="0"
                                 max="9000"
                                 step="1000"
+                                value="0"
                                 oninput="min_price.value=min_price_limit.value"
                             >
                         </label>
                         <label>
                             <span class="visually-hidden">Измените максимальную цену:</span>
                             <input
-                                class="visually-hidden"
                                 type="range"
                                 name="max_price_limit"
                                 min="0"
                                 max="9000"
                                 step="1000"
+                                value="9000"
                                 oninput="max_price.value=max_price_limit.value"
                             >
                         </label>
