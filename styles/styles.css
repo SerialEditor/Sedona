@@ -61,6 +61,8 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .user-menu-button {
@@ -134,10 +136,6 @@ body {
   color: #333333;
 }
 
-.color-white {
-  color: #ffffff;
-}
-
 .button-search {
   font-size: 20px;
   line-height: 36px;
@@ -152,9 +150,43 @@ body {
   background-size: cover;
 }
 
+.subscribe-field {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83b3d3;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .catalog-searching {
   background-color: #8383D3;
   background-image: url("../img/background/full-images/catalog-searching-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer-contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.color-white {
+  color: #ffffff;
 }
