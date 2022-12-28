@@ -15,10 +15,9 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1280px;
   /*Размер контента задан временно; по макету - фикс 1200 пикселей*/
   margin: 0;
-  padding: 0 40px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 400;
   background-color: #f2f2f2;
@@ -37,8 +36,11 @@ body {
   overflow: hidden;
 }
 
-.page-header {
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navigation-list {
@@ -58,16 +60,23 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .user-menu-button {
   line-height: 20px;
   background-color: #756257;
   border-radius: 4px;
-  text-decoration: none;
+}
+
+.index-page-main {
+  text-align: center;
 }
 
 .promo {
+  /* Сделать подложку-фолбэк */
   background-image: url("../img/background/full-images/promo-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,11 +97,29 @@ body {
 }
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
+.advantages-item:first-child, .advantages-item:nth-child(2) {
+  background-color: #83b3d3;
+}
+
 .additional-advantages-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  background-color: #ffffff;
+}
+
+/* Здесь и далее фоны с полупрозрачностью заданы в формате rgba */
+.advantages-item:nth-child(odd):not(:first-child), .additional-advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+} 
+
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title, .additional-advantages-title {
@@ -109,6 +136,13 @@ body {
   color: #333333;
 }
 
+.button-search {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756257;
+  border-radius: 10px;
+}
+
 .index-subscribe {
   background-color: #8383D3;
   background-image: url("../img/background/full-images/subscribe-background.jpg");
@@ -116,9 +150,43 @@ body {
   background-size: cover;
 }
 
+.subscribe-field {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: inherit;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83b3d3;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .catalog-searching {
   background-color: #8383D3;
   background-image: url("../img/background/full-images/catalog-searching-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer-contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.color-white {
+  color: #ffffff;
 }
