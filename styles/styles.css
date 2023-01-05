@@ -39,6 +39,15 @@ button {
   font-family: inherit;
   border: none;
   outline: none;
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+summary {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -76,12 +85,12 @@ button {
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .user-menu-button {
   line-height: 20px;
   background-color: #756257;
-  border-radius: 4px;
 }
 
 .index-page-main {
@@ -241,14 +250,13 @@ button {
 .catalog-searching-button-submit {
   line-height: 21px;
   background-color: #83b3d3;
-  border-radius: 4px;
 }
 
 .catalog-searching-button-reset {
   font-size: 18px;
-  font-weight: 400;
   line-height: 23px;
-  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
   background-color: transparent;
 }
 
@@ -260,16 +268,17 @@ button {
   color: #000000;
 }
 
-.display-order-control {
+.display-order-hallmarks {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-summary {
-  list-style: none;
+.hallmarks-link {
+  color: inherit;
 }
 
 .found-result-title {
@@ -287,6 +296,34 @@ summary {
 
 .found-result .button {
   line-height: 21px;
+}
+
+.button-open-result {
+  background-color: #756257;
+}
+
+.button-add-favorites {
+  background-color: #83b3d3;
+}
+
+.favorites-added {
+  background-color: #7db54f;
+}
+
+.found-result-rating {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.add-results-button {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83b3d3;
 }
 
 .footer-contact-phone {
