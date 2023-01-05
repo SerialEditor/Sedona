@@ -144,59 +144,63 @@
             </fieldset>
             <div class="catalog-searching-buttons">
               <button class="button catalog-searching-button-submit" type="submit">Применить</button>
-              <button class="button catalog-searching-button-reset" type="reset">Сбросить</button>
+              <button class="catalog-searching-button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
       </div>
       <section class="found-results">
-        <h2 class="visually-hidden">Список найденных гостиниц</h2>
-        <div class="outer-wrapper">
+        <h2 class="visually-hidden">Найденные гостиницы</h2>
+        <div class="display-control-toolbar-container">
           <p class="found-results-notice">
             Найдено гостиниц:
             <span class="found-results-amount">38</span>
           </p>
-          <div class="presentation-control-bar">
-            <details class="display-order-control">
+          <section class="display-order">
+            <h3 class="visually-hidden">Порядок вывода результатов поиска</h3>
+            <details class="display-order-hallmarks">
               <summary>Сначала дешёвые</summary>
-              <ul class="display-order-list">
-                <li class="display-order-item">
-                  <a class="display-order-link" href="#">Сначала дешёвые</a>
+              <ul class="hallmarks-list">
+                <li class="hallmarks-item">
+                  <a class="hallmarks-link" href="#">Сначала дешёвые</a>
                 </li>
-                <li class="display-order-item">
-                  <a class="display-order-link" href="#">Сначала дорогие</a>
+                <li class="hallmarks-item">
+                  <a class="hallmarks-link" href="#">Сначала дорогие</a>
                 </li>
-                <li class="display-order-item">
-                  <a class="display-order-link" href="#">Сначала популярные</a>
+                <li class="hallmarks-item">
+                  <a class="hallmarks-link" href="#">Сначала популярные</a>
                 </li>
-                <li class="display-order-item">
-                  <a class="display-order-link" href="#">Сначала комфортные</a>
+                <li class="hallmarks-item">
+                  <a class="hallmarks-link" href="#">Сначала комфортные</a>
                 </li>
               </ul>
             </details>
-            <ul class="appearance-control-list">
-              <li class="appearance-control-item">
-                <a class="appearance-control-link">
+          </section>
+          <section class="layout-modes">
+            <h3 class="visually-hidden">Режимы отображения результатов поиска</h3>
+            <ul class="layout-modes-list">
+              <li class="layout-modes-item">
+                <a class="layout-modes-link">
                   <span class="visually-hidden">Отобразить карточками</span>
                 </a>
               </li>
-              <li class="appearance-control-item">
-                <a class="appearance-control-link" href="#">
+              <li class="layout-modes-item">
+                <a class="layout-modes-link" href="#">
                   <span class="visually-hidden">Отобразить слайдами</span>
                 </a>
               </li>
-              <li class="appearance-control-item">
-                <a class="appearance-control-link" href="#">
+              <li class="layout-modes-item">
+                <a class="layout-modes-link" href="#">
                   <span class="visually-hidden">Отобразить списком</span>
                 </a>
               </li>
             </ul>
-          </div>
+          </section>
         </div>
         <ul class="found-results-list">
           <!--Есть мысль поменять вхождение 'found-results-' на 'card-'-->
           <li class="found-result">
-            <a href="#" target="_blank">
+            <a href="#">
               <h3 class="found-result-title">Amara Resort & Spa</h3>
               <img class="found-result-image" src="img/content/hotel-1.jpg" width="300" height="206" alt="Отель">
             </a>
@@ -210,7 +214,7 @@
             <p class="found-result-rating">Рейтинг: 8,5</p>
           </li>
           <li class="found-result">
-            <a href="#" target="_blank">
+            <a href="#">
               <h3 class="found-result-title">Desert Quail Inn</h3>
               <img class="found-result-image" src="img/content/hotel-2.jpg" width="300" height="206" alt="Отель">
             </a>
@@ -224,21 +228,21 @@
             <p class="found-result-rating">Рейтинг: 8,9</p>
           </li>
           <li class="found-result">
-            <a href="#" target="_blank">
+            <a href="#">
               <h3 class="found-result-title">Villas at Poco Diablo</h3>
               <img class="found-result-image" src="img/content/hotel-3.jpg" width="300" height="206" alt="Отель">
             </a>
             <p class="found-result-type">Гостиница</p>
             <p class="found-result-price">От 2000 ₽</p>
             <a class="button button-open-result" href="#">Подробнее</a>
-            <a class="button button-add-favorites" href="#">В избранном</a>
+            <a class="button button-add-favorites favorites-added" href="#">В избранном</a>
             <p class="found-result-stars-amount">
               <span class="visually-hidden">2 звезды</span>
             </p>
             <p class="found-result-rating">Рейтинг: 9,2</p>
           </li>
           <li class="found-result">
-            <a href="#" target="_blank">
+            <a href="#">
               <h3 class="found-result-title">GreenTree Inn</h3>
               <img class="found-result-image" src="img/content/hotel-4.jpg" width="300" height="206" alt="Отель">
             </a>
