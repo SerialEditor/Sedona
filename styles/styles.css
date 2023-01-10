@@ -24,7 +24,7 @@ body {
   background-color: #f2f2f2;
 }
 
-ul {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -50,6 +50,12 @@ summary {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -68,10 +74,6 @@ summary {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.navigation-list {
-  list-style-type: none;
-}
-
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -83,9 +85,12 @@ summary {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+a.button {
+  text-align: center;
 }
 
 .user-menu-button {
@@ -118,30 +123,11 @@ summary {
   color: #333333;
 }
 
-.advantages-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.advantages-item:first-child,
-.advantages-item:nth-child(2) {
-  background-color: #83b3d3;
-}
-
 .additional-advantages-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   background-color: #ffffff;
 }
 
 /* Здесь и далее фоны с полупрозрачностью заданы в формате rgba */
-.advantages-item:nth-child(odd):not(:first-child),
-.additional-advantages-item:nth-child(odd) {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
 .advantages-item:nth-child(4) {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -160,6 +146,14 @@ summary {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+}
+
+.advantages-background-blue {
+  background-color: #83b3d3;
+}
+
+.advantages-background-transparent-blue {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .button-search {
@@ -209,10 +203,6 @@ summary {
   line-height: 78px;
 }
 
-.breadcrumbs {
-  list-style-type: none;
-}
-
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -230,16 +220,16 @@ summary {
   font-weight: 700;
 }
 
-.select-price-label {
+.price-selection-label {
   border: 2px solid #ffffff;
   border-radius: 4px;
 }
 
-.select-price-label-text {
+.price-selection-label-text {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.price-field {
+.price-selection-field {
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
@@ -247,12 +237,12 @@ summary {
   background-color: transparent;
 }
 
-.catalog-searching-button-submit {
+.catalog-searching-form .button-submit {
   line-height: 21px;
   background-color: #83b3d3;
 }
 
-.catalog-searching-button-reset {
+.catalog-searching-form .button-reset {
   font-size: 18px;
   line-height: 23px;
   text-align: center;
@@ -268,7 +258,7 @@ summary {
   color: #000000;
 }
 
-.display-order-hallmarks {
+.dropdown {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
@@ -277,7 +267,7 @@ summary {
   cursor: pointer;
 }
 
-.hallmarks-link {
+.hallmark-selection-link {
   color: inherit;
 }
 
@@ -326,14 +316,41 @@ summary {
   background-color: #83b3d3;
 }
 
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #83b3d3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination-notice {
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.catalog-subscribe {
+  text-align: center;
+}
+
 .footer-contact-phone {
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .color-white {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
 }

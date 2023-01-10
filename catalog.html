@@ -33,7 +33,7 @@
             </a>
           </li>
         </ul>
-        <div class="user-menu">
+        <div class="user-menu-wrapper">
           <a class="icon-button" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
@@ -121,14 +121,14 @@
             </fieldset>
             <fieldset class="catalog-searching-group">
               <legend class="catalog-searching-title">Стоимость, ₽:</legend>
-              <div class="price-fields-wrapper">
-                <label class="select-price-label">
-                  <span class="select-price-label-text">от</span>
-                  <input class="price-field" type="number" name="min_price" value="0">
+              <div class="price-selection-area-wrapper">
+                <label class="price-selection-label">
+                  <span class="price-selection-label-text">от</span>
+                  <input class="price-selection-field" type="number" name="min_price" value="0">
                 </label>
-                <label class="select-price-label">
-                  <span class="select-price-label-text">до</span>
-                  <input class="price-field" type="number" name="max_price" value="9000">
+                <label class="price-selection-label">
+                  <span class="price-selection-label-text">до</span>
+                  <input class="price-selection-field" type="number" name="max_price" value="9000">
                 </label>
               </div>
               <label>
@@ -143,8 +143,8 @@
               </label>
             </fieldset>
             <div class="catalog-searching-buttons">
-              <button class="button catalog-searching-button-submit" type="submit">Применить</button>
-              <button class="catalog-searching-button-reset" type="reset">Сбросить</button>
+              <button class="button button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -158,20 +158,20 @@
           </p>
           <section class="display-order">
             <h3 class="visually-hidden">Порядок вывода результатов поиска</h3>
-            <details class="display-order-hallmarks">
+            <details class="dropdown hallmark-selection">
               <summary>Сначала дешёвые</summary>
-              <ul class="hallmarks-list">
-                <li class="hallmarks-item">
-                  <a class="hallmarks-link" href="#">Сначала дешёвые</a>
+              <ul class="hallmark-selection-list">
+                <li class="hallmark-selection-item">
+                  <a class="hallmark-selection-link" href="#">Сначала дешёвые</a>
                 </li>
-                <li class="hallmarks-item">
-                  <a class="hallmarks-link" href="#">Сначала дорогие</a>
+                <li class="hallmark-selection-item">
+                  <a class="hallmark-selection-link" href="#">Сначала дорогие</a>
                 </li>
-                <li class="hallmarks-item">
-                  <a class="hallmarks-link" href="#">Сначала популярные</a>
+                <li class="hallmark-selection-item">
+                  <a class="hallmark-selection-link" href="#">Сначала популярные</a>
                 </li>
-                <li class="hallmarks-item">
-                  <a class="hallmarks-link" href="#">Сначала комфортные</a>
+                <li class="hallmark-selection-item">
+                  <a class="hallmark-selection-link" href="#">Сначала комфортные</a>
                 </li>
               </ul>
             </details>
@@ -257,37 +257,40 @@
           </li>
         </ul>
         <button class="button add-results-button" type="button">Загрузить ещё</button>
-        <div class="additional-upload-bar">
-          <ul class="pagination">
+        <section class="pagination">
+          <h3 class="visually-hidden">Список страниц с результатами поиска</h3>
+          <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="button pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="button pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="button pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="button pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="button pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="button pagination-link" href="#">10</a>
             </li>
           </ul>
-          <p>Гостиниц на странице:</p>
-          <details class="details-field">
-            <summary>4</summary>
-            <ul>
-              <li>
-                <a href="#">4</a>
-              </li>
-            </ul>
-          </details>
-        </div>
+          <div class="pagination-inner-wrapper">
+            <p class="pagination-notice">Гостиниц на странице:</p>
+            <details class="dropdown results-amount">
+              <summary>4</summary>
+              <ul>
+                <li>
+                  <a href="#">4</a>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </section>
       </section>
       <section class="subscribe catalog-subscribe">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
@@ -297,7 +300,7 @@
             <span class="visually-hidden">Ваш e-mail</span>
             <input class="subscribe-field" type="email" name="email" placeholder="Ваш e-mail">
           </label>
-          <button class="button subscribe-button" type="submit">Подписаться</button>
+          <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
